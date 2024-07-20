@@ -6,13 +6,6 @@
     <title>My Resume</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      @media print {
-        body,
-        .container {
-          margin: 0;
-          padding: 0;
-        }
-      }
       body {
         font-family: Arial, sans-serif;
         line-height: 1.4;
@@ -21,34 +14,36 @@
         background-color: #f4f4f4;
       }
       .container {
-        width: 80%;
+        width: 100%;
+        max-width: 800px;
         margin: auto;
         overflow: hidden;
         background: #fff;
-        padding: 10px;
+        padding: 10px 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
       header {
         border-bottom: 2px solid #333;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         margin-bottom: 10px;
       }
       header h1 {
         margin: 0;
-        font-size: 24px;
         color: #333;
+        font-size: 20px;
       }
       .contact-info {
         color: #555;
-        font-size: 14px;
+        font-size: 12px;
       }
       h2 {
         background: #333;
         color: #fff;
         padding: 5px;
         border-radius: 5px;
-        font-size: 18px;
+        font-size: 16px;
+        margin: 0 0 10px 0;
       }
       section {
         margin-bottom: 10px;
@@ -62,6 +57,7 @@
         border: 1px solid #ddd;
         border-radius: 5px;
         background: #f9f9f9;
+        font-size: 14px;
       }
       ul {
         list-style-type: none;
@@ -94,11 +90,60 @@
       }
       .languages h3 {
         margin: 0;
-        font-size: 16px;
+        font-size: 14px;
       }
       .languages p {
         margin: 5px 0;
-        font-size: 14px;
+        font-size: 12px;
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 95%;
+          padding: 10px 15px;
+        }
+        header h1 {
+          font-size: 18px;
+        }
+        .contact-info {
+          font-size: 10px;
+        }
+        h2 {
+          font-size: 14px;
+          padding: 4px;
+        }
+        .languages {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .languages div {
+          border-right: none;
+          border-bottom: 1px solid #ddd;
+        }
+        .languages div:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+      @media (max-width: 480px) {
+        .container {
+          width: 100%;
+          padding: 5px 10px;
+        }
+        header h1 {
+          font-size: 16px;
+        }
+        .contact-info {
+          font-size: 8px;
+        }
+        h2 {
+          font-size: 12px;
+          padding: 4px;
+        }
+        .languages h3 {
+          font-size: 12px;
+        }
+        .languages p {
+          font-size: 10px;
+        }
       }
     </style>
   </head>
@@ -148,6 +193,7 @@
             Sikar (RBSE Board)</b
           >
         </p>
+        <p>One year Computer Diploma</p>
       </section>
 
       <section class="skills">
