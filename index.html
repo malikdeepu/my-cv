@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @media print {
+        body,
+        .container {
+          margin: 0;
+          padding: 0;
+        }
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        background: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #333;
+      }
+      .contact-info {
+        color: #555;
+        font-size: 14px;
+      }
+      h2 {
+        background: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+      section {
+        margin-bottom: 10px;
+      }
+      .myself,
+      .education,
+      .skills,
+      .certifications,
+      .languages {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background: #f9f9f9;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        padding: 5px 0;
+      }
+      .skills ul,
+      .certifications ul {
+        padding-left: 15px;
+      }
+      .education p,
+      .skills li,
+      .certifications li {
+        margin: 5px 0;
+      }
+      .languages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .languages div {
+        flex: 1;
+        padding: 5px 10px;
+      }
+      .languages div:not(:last-child) {
+        border-right: 1px solid #ddd;
+      }
+      .languages h3 {
+        margin: 0;
+        font-size: 16px;
+      }
+      .languages p {
+        margin: 5px 0;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Deepanshu Malik</h1>
+        <p class="contact-info">
+          Email: deepanshumaik@gmail.com | Phone: 8685080674
+        </p>
+      </header>
+
+      <section class="myself">
+        <h2>Myself</h2>
+        <p>
+          I am Deepanshu Malik, a passionate and ambitious student who has
+          recently completed 12th grade. My journey has been marked by a strong
+          desire to learn and grow, constantly pushing myself to achieve new
+          heights. I thrive in environments that challenge me and provide
+          opportunities to innovate and create.
+        </p>
+        <p>
+          Beyond academics, I have a keen interest in technology and web
+          development. My inquisitive nature drives me to explore new
+          technologies and stay updated with industry trends. I am committed to
+          making a positive impact through my work and am eager to contribute to
+          meaningful projects.
+        </p>
+        <p>
+          In my free time, I enjoy reading, coding, and participating in
+          hackathons. I believe in the power of continuous learning and am
+          always on the lookout for new opportunities to expand my skillset and
+          knowledge.
+        </p>
+      </section>
+
+      <section class="education">
+        <h2>Education</h2>
+        <p>
+          10th by CGPA system, scored 9.8 /10 <br />
+          <b>Yaduvanshi Shiksha Niketan, Mahendergarh (CBSE Board)</b>
+        </p>
+        <p>
+          Passed 12th with 64.40% <br />
+          <b
+            >(1220013) Shastri Bn Sr Ss, Behind Samarthpura Sch, Piprali Road,
+            Sikar (RBSE Board)</b
+          >
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>MySQL</li>
+          <li>HTML & CSS</li>
+          <li>WordPress</li>
+        </ul>
+      </section>
+
+      <section class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+          <li>1-year Computer Diploma</li>
+          <li>Hackathon (Tenc Coding Campus)</li>
+        </ul>
+      </section>
+
+      <section class="languages">
+        <h2>Languages</h2>
+        <div>
+          <h3>Hindi</h3>
+          <p>Fluent</p>
+        </div>
+        <div>
+          <h3>English</h3>
+          <p>Fluent</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
